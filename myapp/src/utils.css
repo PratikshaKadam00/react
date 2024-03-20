@@ -1,0 +1,40 @@
+.Body1 {
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+  
+  
+  }
+  
+  .mainDiv {
+    max-width: fit-content;
+  }
+  
+  .flexDir {
+    flex-direction: column;
+  }
+  
+  .input {
+  
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: solid;
+    display: inline-flex;
+    padding: 10px 5px;
+  
+  }
+  
+  .Button1 {
+    background-color: #100f0f;
+    /* Green */
+    border: #7e5c30;
+    color: white;
+    padding: 10px 27px;
+    margin: .5%;
+    text-align: center;
+    text-decoration: solid;
+    /* display: inline-flex; */
+    font-size: 16px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+  }

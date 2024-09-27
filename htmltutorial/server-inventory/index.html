@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+   
+    <title>Server Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+
+        <div class="header-left">
+            <img src="images/logo.png" alt="Company Logo" class="logo">
+        </div>
+        
+        <div class="header-container">
+        <h1>Server Inventory Management</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">View</a></li>
+                <li><a href="#servers">Add</a></li>
+                <li><a href="#contacts">Export</a></li>
+            </ul>
+        </nav>
+
+        <div class="login-container">
+            <button id="loginbutton">Login</button>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        
+        <section id="servers">
+            <h2>Server List</h2>
+            <table id="server-table">
+                <thead>
+                <tr>
+                    <th>Server Name</th>
+                    <th>IP Address</th>
+                    <th>Region</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Server 1</td>
+                        <td>192.168.1.1</td>
+                        <td>US-East</td>
+                    </tr>
+                </tbody>
+
+            </table>
+       
+        </section>
+    </main>
+
+    <footer>
+            <p>© 2024 Server Inventory Management</p>
+    </footer>
+
+    <script src="js/indexscript.js"></script>
+</body>
+</html>

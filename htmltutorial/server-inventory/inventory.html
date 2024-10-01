@@ -1,27 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Server Inventory</title>
-  <link rel="stylesheet" href="css/inventorystyle.css">
+    <title>Server Inventory - View Details</title>
+    <link rel="stylesheet" href="css/inventorystyle.css">
 </head>
 <body>
-  <h2>Server Inventory</h2>
-  <table id="inventorytable">
-    <thead>
-      <tr>
-        <th>Serial Number</th>
-        <th>Host Name</th>
-        <th>Public IP</th>
-        <th>User Name</th>
-        <th>Sudo Access</th>
-        <th>Actions</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-  </table>
-  <script src="js/inventoryscript.js"></script>
+    <header>
+        <div class="header-left">
+            <img src="images/logo.png" alt="Company Logo" class="logo">
+        </div>
+        <div class="header-container">
+            <h1>Server Inventory Management</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#servers">Servers</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="login-container">
+                <button id="logoutButton">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="server-details">
+            <h2>Server Details</h2>
+            <table id="server-info-table">
+                <tr>
+                    <th>Serial Number:</th>
+                    <td>12345678</td>
+                </tr>
+                <tr>
+                    <th>Registered Email Account:</th>
+                    <td>admin@example.com</td>
+                </tr>
+                <tr>
+                    <th>AWS Account ID:</th>
+                    <td>1111-2222-3333</td>
+                </tr>
+                <tr>
+                    <th>Region:</th>
+                    <td>US-East</td>
+                </tr>
+                <tr>
+                    <th>Instance Created Date:</th>
+                    <td>2023-09-10</td>
+                </tr>
+                <tr>
+                    <th>Host Name:</th>
+                    <td>server01.example.com</td>
+                </tr>
+                <tr>
+                    <th>Public IP Address:</th>
+                    <td>203.0.113.5</td>
+                </tr>
+                <tr>
+                    <th>Private IP Address:</th>
+                    <td>10.0.0.5</td>
+                </tr>
+                <tr>
+                    <th>CIDR Network:</th>
+                    <td>10.0.0.0/24</td>
+                </tr>
+                <tr>
+                    <th>User Name:</th>
+                    <td>admin</td>
+                </tr>
+                <tr>
+                    <th>User ID:</th>
+                    <td>1001</td>
+                </tr>
+                <tr>
+                    <th>User Password:</th>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <th>PassPhrase:</th>
+                    <td>***</td>
+                </tr>
+                <tr>
+                    <th>Primary Group Name:</th>
+                    <td>admins</td>
+                </tr>
+                <tr>
+                    <th>Group ID:</th>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <th>Secondary Group:</th>
+                    <td>developers</td>
+                </tr>
+                <tr>
+                    <th>Sudo Access:</th>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <th>PPK File:</th>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <th>Installed Packages:</th>
+                    <td>nginx, nodejs, npm</td>
+                </tr>
+                <tr>
+                    <th>Ports Enabled:</th>
+                    <td>22, 80, 443</td>
+                </tr>
+                <tr>
+                    <th>Comments:</th>
+                    <td>No issues reported.</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Server Inventory Management</p>
+    </footer>
+    <script src="js/inventoryscript.js"></script>
 </body>
 </html>

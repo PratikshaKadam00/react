@@ -1,36 +1,29 @@
 <!DOCTYPE html>
 
 <head>
-   
     <title>Server Inventory</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-
         <div class="header-left">
             <img src="images/logo.png" alt="Company Logo" class="logo">
-        </div>
-        
+        </div>  
         <div class="header-container">
         <h1>Server Inventory Management</h1>
         <nav>
             <ul>
-                <li><a href="#home">View</a></li>
-                <li><a href="#servers">Add</a></li>
-                <li><a href="#contacts">Export</a></li>
+                <li ><a id="viewinventory" style="display: none;" href="#home">View</a></li>
+                <li ><a id="addserver" style="display: none;" href="#servers">Add</a></li>
+                <li ><a id="exportdata" style="display: none;" href="#contacts">Export</a></li>
             </ul>
         </nav>
-
         <div class="login-container">
-            <button id="loginbutton">Login</button>
+            <button id="loginbutton" onclick="window.location.href='login.html'">Login</button>
         </div>
     </div>
     </header>
-
     <main>
-        
         <section id="servers">
             <h2>Server List</h2>
             <table id="server-table">
@@ -48,16 +41,12 @@
                         <td>US-East</td>
                     </tr>
                 </tbody>
-
             </table>
-       
         </section>
     </main>
-
     <footer>
             <p>© 2024 Server Inventory Management</p>
     </footer>
-
     <script src="js/indexscript.js"></script>
 </body>
 </html>

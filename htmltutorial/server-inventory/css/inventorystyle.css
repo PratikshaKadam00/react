@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: relative; /* To position header elements properly */
+}
+
+.header-container {
+    display: flex;
+    justify-content: flex-end; /* Align login to the right */
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    flex-grow: 1;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555; /* Hover effect for links */
+}
+
+.login-container {
+    display: flex;
+    align-items: center;
+}
+
+.login-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0px;
+    transition: background-color 0.3s;
+}
+
+main {
+    padding: 40px 20px;
+    
+}
+
+/* Container to center and limit table width */
+#server-details {
+    max-width: 1500px; /* Limit the width */
+    margin: 10px 0 ; /* Center the table */
+    padding: 20px;
+}
+
+
+/* Table styling */
+#server-info-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow:  0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#server-info-table th,
+#server-info-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#server-info-table th {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+#server-info-table td {
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+
+#server-info-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+#server-info-table tr:hover {
+    background-color: #eaeaea;
+}
+
+
+
+
+/* Section heading for the table */
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header-container {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #server-info-table th, 
+    #server-info-table td {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+}

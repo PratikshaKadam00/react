@@ -6,11 +6,11 @@ document.getElementById('loginform').addEventListener('submit', function(e){
     if(username==='admin' && password==='admin123')
     {
         localStorage.setItem('role', 'admin');
-        window.location.href='dashboard.html';
+        window.location.href='index.html';
     }else if(username==='user' && password==='user123')
     {
         localStorage.setItem('role', 'user')
-        window.location.href='dashboard.html';
+        window.location.href='index.html';
     }else
     {
         alert('Invalid credentials')

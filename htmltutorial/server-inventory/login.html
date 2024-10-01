@@ -16,6 +16,31 @@
 
         </form>
     </div>
-  <script src="./js/loginscript.js"></script>
+  
+    <script>
+        document.getElementById('loginform').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Simulate role-based login (Replace with actual authentication logic)
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            let role = '';
+
+            if (username === 'admin' && password === 'admin123') {
+                role = 'admin';
+            } else if (username === 'user' && password === 'user123') {
+                role = 'user';
+            } else {
+                alert('Invalid login credentials.');
+                return;
+            }
+
+            // Store the role in localStorage
+            localStorage.setItem('userrole', role);
+
+            // Redirect to the dashboard (index.html)
+            window.location.href = 'index.html';
+        });
+    </script>
 </body>
 </html>

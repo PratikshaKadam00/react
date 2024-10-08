@@ -1,16 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header{
+.header{
     background-color: #333;
     color: #fff;
     padding : 10px 20px;
@@ -27,8 +15,7 @@ header{
     position: relative;
 }
 
-
-header h1{
+h1{
     margin: 0;
     position: absolute; /* Position absolute for centering */
     left: 50%;
@@ -61,8 +48,9 @@ nav ul li a {
   nav a:hover {
     background-color: #555; /* Hover effect for links */
   }
-  
-  .login-container{
+
+
+.login-container{
     display: flex;
     align-items: center;
   }
@@ -78,31 +66,3 @@ nav ul li a {
     margin-right: 0px;
     transition: background-color 0.3s;
   }
-
-main{
-    padding: 20;
-    
-}
-
-table{
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-}
-
-table th, table td{
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: left;
-}
-
-footer{
-    text-align: center;
-    margin-top: 20px;
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-}

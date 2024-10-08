@@ -1,0 +1,51 @@
+.inventory-table{
+    max-width: 100%;
+    overflow-x: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.inventory-table table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-table th, .inventory-table td{
+
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+    font-size: 14px;
+}
+
+.section-header{
+    background-color: #304e6e;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-radius: 4px;
+    border-bottom: 2px solid #030c16 ;
+    opacity: 0.1;
+}
+
+/* Alternating column colors */
+.inventory-table td:nth-child(odd){
+    background-color: #f8f9fa;
+}
+
+  .inventory-table th{
+    width: 5%;
+    font-weight: bold;
+  }
+
+  /* Scrollable table */
+.inventory-table {
+    overflow-x: auto;
+    max-height: 500px;
+  }
+

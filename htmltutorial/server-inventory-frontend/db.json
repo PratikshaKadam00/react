@@ -1,0 +1,57 @@
+{
+    "inventory": [
+      {
+        
+        "serialNumber": 1,
+        "registeredEmail": "user@example.com",
+        "awsAccountId": "123456789",
+        "region": "us-east-1",
+        "instanceCreatedDate": "2023-01-01",
+        "hostName": "Server1",
+        "publicIpAddress": "192.168.1.1",
+        "privateIpAddress": "10.0.0.1",
+        "cidrNetwork": "192.168.0.0/24",
+        "userName": "JohnDoe",
+        "userId": "JD001",
+        "userPassword": "***",
+        "passPhrase": "securePass123",
+        "primaryGroupName": "Admin",
+        "groupId": "G001",
+        "secondaryGroup": "Developers",
+        "sudoAccess": true,
+        "groupAddCommand": "groupadd admin",
+        "userAddCommand": "useradd johndoe",
+        "ppkFile": "server_key.ppk",
+        "installedPackages": "nginx, nodejs",
+        "portsEnabled": "80, 443",
+        "comments": "No issues."
+      },
+      {
+        "serialNumber": 2,
+        "registeredEmail": "user@example.com",
+        "awsAccountId": "123456789",
+        "region": "us-east-1",
+        "instanceCreatedDate": "2023-01-01",
+        "hostName": "Server1",
+        "publicIpAddress": "192.168.1.1",
+        "privateIpAddress": "10.0.0.1",
+        "cidrNetwork": "192.168.0.0/24",
+        "userName": "JohnDoe",
+        "userId": "JD001",
+        "userPassword": "***",
+        "passPhrase": "securePass123",
+        "primaryGroupName": "Admin",
+        "groupId": "G001",
+        "secondaryGroup": "Developers",
+        "sudoAccess": true,
+        "groupAddCommand": "groupadd admin",
+        "userAddCommand": "useradd johndoe",
+        "ppkFile": "server_key.ppk",
+        "installedPackages": "nginx, nodejs",
+        "portsEnabled": "80, 443",
+        "comments": "No issues."
+      }
+      
+    ]
+  }
+  

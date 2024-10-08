@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Footer from './components/footer';
+import Header from './components/header';
+import AdminDashboard from './components/AdminDashBoard';
+import UserDashboard from './components/UserDashBoard';
 
 function App() {
+
+  const[role, setRole]=useState(null);
+
+  const handleLoginSubmit=({role})=>{
+    setRole(role);
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <Header onLogin={handleLoginSubmit}></Header>
+    {role==='admin' && <AdminDashboard/>}
+    {role==='user' && <UserDashboard/>}
+    
+    <Footer></Footer>
     </div>
   );
 }
